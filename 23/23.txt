@@ -1,0 +1,44 @@
+#! /bin/env python
+
+def cp(k):
+  t=k
+  import math
+  for i in range(2,int(math.sqrt(k))):
+    if(k%i==0):
+    return 1
+  return 0
+def pf(k):
+  t=k
+  p=[]
+  cnt=0
+  if cp(k):
+    p.append(k)
+    p.append(1)
+    return p
+  else
+    if k%2==0:
+      p.append([])
+      p[cnt].append[2]
+      cnt+=1
+      p[0].append(0)
+      while k%2=0:
+        p[0][1]+=1
+        k/=2
+    for i in range(3,int(t/2)+1,2):
+      if(k%i==0):
+        p.append([])
+        p[cnt].append(i)
+        p[cnt].append(0)
+        while k%i==0:
+          p[cnt][1]+=1
+          k/=i
+        cnt+=1
+    return p
+def soad(k):
+  t=pf(k)
+  sum=1
+  for i in range(len(t)):
+    a=t[i]
+    sum*=((pow(a[0],a[1]+1)-1)/(a[0]-1)
+  return sum
+input(">")
